@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="hubstyle.css" media="screen"/>
+</head>
+<style type="text/css">
+ 
+  *{ margin:0;
+    padding: 0;
+    box-sizing: border-box ; 
+font-family:'Josefin Sans', sans-serif;
+}
+
+  nav{
+  height:70px;
+  background-color:#24292e;
+  width:100%;
+  line-height:70px;
+}
+   
+.backgroundrt{
+ background-image: url("images/newbg.jpg");
+  width: 100%;
+      height: 100vh;
+      display:flex;
+      justify-content:space-around;
+      }
+
+.images1{
+
+
+
+}
+.images1 .big{
+   color:#E31413  ;
+  font-size:35px;
+  padding-top:9px;
+  margin-top: 20px;
+  padding-left:30px;
+  font-style:bold;
+  font-weight: 400;
+
+}
+.images1 .para1{
+  color:#fff  ;
+  font-size:20px;
+  padding-top:0px;
+  margin-top: 20px;
+  width:500px;
+  padding-left:30px
+
+
+}
+  
+  
+  
+
+nav ul {
+  list-style:none;
+  padding-left:0px;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:left;
+   
+  
+}
+nav ul li{
+ margin-left: 10px;
+ margin-right: 10px;
+    
+}
+nav ul li a{
+  color:#fff;
+  text-decoration:none;
+    }
+    /*
+    .link1:hover + .drop1{
+display:block;    }
+    .drop1{
+margin-top:5px;
+border-radius:5px;
+      height:300px;
+      width:200px;
+      background-color:#fff;
+     text-align:left;
+     margin-left:160px; 
+    
+    }
+
+    .drop2{
+margin-top:5px;
+border-radius:5px;
+      height:300px;
+      width:200px;
+      background-color:#fff;
+     text-align:left;
+     margin-left:100px; 
+
+      
+    }
+    .drop1 .unorderlist{
+      list-style:none;
+      text-align:left;
+      margin-left:-30px;
+      margin-top: 10px;
+      color:grey;
+    }
+    .drop2 .unorderlist{
+      list-style:none;
+      text-align:left;
+      margin-left:-30px;
+      margin-top: 10px;
+      color:grey;
+    }
+    */
+.logo-image{
+    width: 50px;
+    height: 50px;
+   margin-right: 10px;
+ margin-left: 100px;
+    overflow: hidden;
+    margin-top: 10px;
+    padding-left: 10px;
+   }
+.img-fluid{
+  width:30px; 
+  height:30px;
+}
+
+nav select {
+  display:none;
+
+}
+
+
+/* text on photo*/
+.lines{
+  padding-left:10px;
+  padding-top:30px;
+ margin-left:180px;
+  height:500px;
+  width:500px;
+  
+}
+.lines p {
+  font-size:25px;
+  color:grey;
+   margin-top:220px;
+   font-family: 'Josefin Sans', sans-serif;
+}
+.lines span{
+   color:#fff;
+}
+.lines .header{
+  font-size:70px;
+
+}
+
+
+/*for form */
+.signupform {
+  background-color:#fff;
+  height:450px;
+  width: 400px;
+  margin-top:90px;
+  border-radius:13px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:-40px;
+display: none;
+
+  
+ 
+}
+.signupform input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.signupform  input[type=password]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+
+.signupform  input[type=submit] {
+  width: 100%;
+  height:60px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 30px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style:bold;
+
+
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.signupform ::placeholder {
+  color: #888b8e;
+  font-size: 15px;
+  text-decoration:bold;
+  padding-left: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.signupform  .blue{
+  color:blue;
+}
+.signipform .passinfo {
+  font-size:2px;
+}
+
+div {
+  
+}
+.searchbox{
+  width:230px;
+ background-color:#3f4448;
+  border-radius:5px;
+  border-color:#24292e;
+  height:40px;
+  margin-left:300px;
+}
+.searchbox:hover{
+  background-color:#fff;
+}
+@media (max-width: 960px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
+}
+nav ul  li ::placeholder {
+  color: #888b8e;
+  font-size: 13px;
+  text-decoration:bold;
+  padding-left: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.button {
+  padding:5px;
+  background-color: #24292e;
+  border: 1px solid #fff;
+  border-radius:5px;
+  color:#FFF;
+  text-decoration:none;
+}
+.imagesft{
+background-image: url("images/bgtext.png");
+  width: 70%;
+      height: 30vh;
+      margin-left: 200px;
+      margin-top: 50px;
+      border-radius: 13px;
+    
+
+
+
+}
+.imagesft .button2{
+  margin-left:750px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  width:250px;
+  height:40px;
+  border-radius:6px;
+  margin-top:-100px;
+  text-decoration: none;
+
+  font-size: 16px;
+ 
+  cursor: pointer;
+
+}
+.imagesft .button2 h4{
+  color:#FFF;
+}
+
+
+
+.imagesft h4:after {
+    content: ' \2192';
+    font-style:bold;
+    font-size:25px;
+}
+
+/*for arraow*/
+.arrow {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+ 
+
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/*for logos in row*/
+.verticalslogos{
+  height:300px;
+  width:900px;
+
+ margin-top:40px;
+ margin-left:300px;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+.row1 {
+  display: flex;
+}
+/* Create three equal columns that sits next to each other */
+.column {
+  margin-top: 30px;
+  flex: 33.33%;
+  padding: 10px;
+ filter: grayscale(100%);
+}
+.fblogo{
+  margin-top:-10px; 
+  height:70%;
+  width:70%;
+}
+.column:hover{
+  filter: grayscale(0%);
+}
+.verticalslogos p{
+
+  font-size:25px;
+  font-style:bold;
+  color:grey;
+  text-align:center;
+}
+.team{
+  margin-left:400px;
+  margin-top:10px;
+  padding-top:10px;
+
+  height:400px;
+  width:650px;
+text-align:center;
+
+}
+.team .s1{
+  color:grey;
+  font-size:15px;
+  margin-top:20px;
+  
+ 
+
+}
+.team .s2{
+  margin-top:20px;
+  color:black;
+  font-weight:700;
+    font-style:bold;
+  font-size:50px;
+ 
+ 
+}
+.team .p1{
+   padding-top:15px;
+   color:grey;
+ font-size:30px;
+  
+
+}
+.team button.button3{
+  padding-top:20px;
+  background-color:transparent; /* Green */
+  border-radius:5px;
+  border-color:#008CBA;
+  color: #008CBA;
+  border-width:3px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.team button.button3:hover {
+  padding-top:20px;
+  background-color:transparent; /* Green */
+  border-radius:5px;
+  border-color:#ef2950;
+  color: #ef2950;
+  border-width:3px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.team .button3 h4{
+  color: #008CBA;
+
+}
+
+.cards{
+ 
+ 
+ display:flex;
+ justify-content:space-between;
+}
+.team .button3 h4:after {
+    content: ' \2192';
+    font-style:bold;
+    font-size:25px;
+} 
+
+.cards * {
+  box-sizing: border-box;
+}
+.cards .frame:hover{
+   border: 0px solid grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius:5px;
+}
+.cards  .frame{  
+        width: 400px;
+        height: 150px;
+       margin-top:10px;
+     margin-right: 30px;
+
+       
+        position: relative;
+       
+  
+ 
+  background-color: #fff;
+    }    
+   .cards  .card{ 
+         
+ padding-left:5px;
+padding-top:8px;
+        max-height: 100%;  
+        max-width: 100%; 
+         text-align: left;
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 30px;  
+
+        margin: auto;
+    }
+    .cards  .card p { font-size:15px;
+      padding-top: 10px;
+
+         
+
+        
+    }
+
+.cards p:after {
+    content: ' \2192';
+    font-style:bold;
+    font-size:30px;
+    color:red;
+    padding-left:200px;
+}
+.cards .imgchange{
+float:left;
+}
+.cards .img3{
+  float:right;
+}
+.slidecard {
+  
+background-color :#fff;
+width:100%;
+height:70vh;
+
+
+
+}
+.slidecard h2{
+  padding-top:20px;
+  text-align:center;
+  color :grey;
+
+
+}
+.slidecard .card {
+  margin-top: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width:40vh;
+  height:40vh;
+  border-radius:5px;
+ border-color:red;
+ margin-left:40px;
+ margin-right: 40px;
+}
+
+.slidecard .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.slidecard  .img3:hover .img3  {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+
+}
+
+.slidecard .container {
+  padding: 2px 16px;
+}
+.slidecard .img1{
+margin-left:15px;
+padding-top:20px;
+width:90%;
+height:70%;
+border-radius:5px;
+
+ 
+
+
+}
+.slidecard .t2{
+display:flex;
+justify-content:space-between;
+}
+/* Responsive columns */
+.slidecard h4,p{
+
+
+
+}
+.slidecard h3{
+  color:#13BFE3 ;
+margin-top:5px;
+
+
+}
+.slidecard hr{
+  margin-top:5px;
+  color:black;
+
+}
+ .slidecard h3:after {
+    content: ' \2192';
+    font-style:bold;
+    font-size:20px;
+    font-weight:400px;
+    color:#13BFE3;
+    padding-left:100px;
+    
+}
+
+.learngithub{
+  margin-top:-50px;
+  margin-bottom:30px;
+  
+}
+/* Style the counter cards */
+.learngithub .team{
+  margin-left:400px;
+  margin-top:-50px;
+  padding-top:0px;
+
+  height:300px;
+  width:650px;
+text-align:center;
+
+}
+.learngithub .team .s1{
+  color:grey;
+  font-size:15px;
+  margin-top:0px;
+  
+ 
+
+}
+.learngithub .team .s2{
+  margin-top:0px;
+  color:black;
+  font-weight:700;
+    font-style:bold;
+  font-size:50px;
+ 
+ 
+}
+.learngithub .team .p1{
+   padding-top:25px;
+   color:grey;
+ font-size:25px;
+ padding-bottom:20px;
+  
+
+}
+.learngithub .team button.button3{
+  margin-top:30px;
+  background-color:transparent; /* Green */
+  border-radius:5px;
+  border-color:#008CBA;
+  color: #008CBA;
+  border-width:3px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.learngithub .team .button3 h4:after {
+    content: ' \2192';
+    font-style:bold;
+    font-size:25px;
+} 
+.coding{
+  margin-top: 70px;
+  display:inline-flex;
+  margin-left:400px;
+  justify-content:space-around;
+}
+.coding  .frame{  
+        width: 400px;
+        height: 150px;
+       margin-top:10px;
+     margin-right: 30px;
+
+       
+        position: relative;
+       
+  
+ 
+  background-color: #fff;
+    }    
+   .coding  .card{ 
+         
+ padding-left:5px;
+padding-top:8px;
+        max-height: 100%;  
+        max-width: 100%; 
+         text-align: left;
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 30px;  
+
+        margin: auto;
+    }
+    .coding  .card p { font-size:15px;
+      padding-top: 10px;
+
+         
+
+        
+    }
+.coding .imgs{
+  height:400px;
+  width:450px;
+ 
+
+}
+.longcard{
+  margin-left:450px;
+
+}
+.longcard .frame:hover{
+   border: 0px solid grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+        border-radius:5px;
+}
+.longcard  .frame{  
+        width: 600px;
+        height: 200px;
+       margin-top:10px;
+     margin-right: 30px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+       
+        position: relative;
+       
+  
+ 
+  background-color: #fff;
+    }    
+   .longcard  .card{ 
+    display:flex;
+         
+ padding-left:5px;
+padding-top:40px;
+        max-height: 100%;  
+        max-width: 100%; 
+         text-align: left;
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 30px;  
+
+        margin: auto;
+    }
+    .longcard  .card p { font-size:15px;
+      padding-top: 10px;
+      color:grey;
+
+         
+
+        
+    }
+    .longcard h4{
+      font-style:bold;
+      padding-top:10px;
+    text-align:left;
+    font-size:15px;
+    color:#008CBA;
+    }
+
+.longcard h4:after {
+    content: ' \2192';
+    font-style:bold;
+    font-size:15px;
+    color:#008CBA;
+    margin-top:5px;
+    padding-left:5px;
+}
+.longcard .logo{
+  height:100px;
+  width:100px;
+}
+.longcard .text{
+  padding-left:30px;
+}
+.lastsec {
+  margin-top:150px;
+  margin-bottom:150px;
+
+}
+.circularimg{
+display:flex;
+flex:space-between;
+margin-left:15%;
+margin-bottom:190px;
+
+
+
+}
+.circularimg .img1{
+  height:90px;
+margin-left:70px;
+
+  width:90px;
+
+
+}
+.circularimg .logo:hover{
+ transform: scale(1.5); 
+
+
+
+}
+.circularimg .img2{
+  height:90px;
+margin-left:70px;
+  width:90px;
+margin-top:50px;
+ background-color:transparent;
+}
+.circularimg .logo{
+  width:100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: transform .2s;
+ 
+
+ 
+}
+
+.simpltext{
+  margin-left:00px;
+  margin-bottom:150px;
+
+
+}
+.simpltext p,h4{
+  color:grey;
+  text-align:center;
+
+
+}
+.simpltext h4:after {
+    content: ' \2192';
+    font-style:bold;
+    font-size:15px;
+    color:#008CBA;
+    margin-top:5px;
+    padding-left:5px;
+}
+.simpltext  h4{
+      font-style:bold;
+      padding-top:10px;
+    font-size:15px;
+    color:#008CBA;
+     text-align:center;
+
+    }
+.developerscard .slidecard
+{
+  margin-top:-100px;
+  margin-bottom:0px;
+}
+.simpltext .learngithub{
+  margin-top:0px;
+  
+}
+.lasttext  {
+
+margin-top:-100px;
+margin-bottom:50px; 
+}
+.lasttext  p{
+  color:grey;
+  text-align:center;
+  font-size:20px;
+
+}
+.lastcards .circle1{
+ width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  padding-top:100px;
+  text-align: center;
+ background-color:#85C1E9 ;
+ margin-left:200px;
+
+ transition: transform .2s;
+}
+.lastcards .circle2{
+ width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+transition: transform .2s;
+  text-align: center;
+ background-color:pink;
+ margin-left:30px;
+ margin-top:60px;
+}
+.lastcards .circle3{
+ width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size:15px;
+  color: #fff;
+  text-align: center;
+ background-color:grey;
+ margin-left:-300px;
+ margin-top:300px;
+ transition: transform .2s;
+}
+.lastcards .circle2,.circle3,.circle1 span{
+  padding-top:60px;
+
+}
+.lastcards .circle1:hover{
+ transform: scale(1.2); 
+  background-color:#2E86C1;
+}
+.lastcards .circle2:hover{
+    transform: scale(1.1); 
+  background-color:#EC407A ;
+}
+.lastcards .circle3:hover{
+  transform: scale(1.5); 
+  background-color:#2E4053 ;
+}
+.lastcards  .imagerobo{
+  margin-left:50px;
+  display:flex;
+
+}
+
+.footer1 {
+  width:100%;
+  background-color:#24292e;
+  height:300px;
+
+
+}
+.footer1 .textfooter{
+  padding-top:20px;
+  margin-top: 10px;
+  width:700px;
+  height:250px;
+ margin-left:400px; 
+
+
+}
+.footer1 .textfooter p{
+  margin-top:90px;
+ font-size:30px;
+ color:white;
+ text-align:center; 
+
+  
+}
+.footer1 .footerform {
+ 
+  height:200px;
+  margin-top:30px;
+  width: 100%;
+  
+  background-color: #f2f2f2;
+  
+  background-color:#24292e;
+
+  
+ 
+}
+.footer1 .footerform input[type=text]{
+  width: 300px;
+  height: 40px;
+  padding: 12px 20px;
+  margin: 8px 0;
+ 
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-left:30px;
+
+}
+.footer1 .footerform  input[type=password]{
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+   margin-left:30px;
+  
+
+}
+
+
+.footer1 .footerform input[type=submit] {
+  width: 300px;
+ height: 38px;
+
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 50px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style:bold;
+
+margin-left:30px;
+}
+.footer1 .flex1{
+  margin-left:80px;
+}
+
+
+.footer1 input[type=submit]:hover {
+  background-color: #45a049;
+}
+.footer1 .footerform ::placeholder {
+  color: #888b8e;
+  font-size: 15px;
+  text-decoration:bold;
+  padding-left: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.footer1 .signupform  .blue{
+  color:blue;
+}
+.footer1 .signipform .passinfo {
+  font-size:2px;
+}
+.footer2{
+  background-color:#fff;
+  width:100%;
+  height:300px;
+display:flex; 
+flex:space-between;
+}
+.footer2 img{
+  width:150px;
+  height:150px;
+
+  
+}
+.footer2 .unorderlist {
+  margin-left:150px;
+  list-style:none;
+  color:grey;
+
+}
+.not{
+  margin-top:70px;
+  margin-left:100px;
+display:flex; 
+}
+.footerlast {
+   position: absolute;
+  
+   width: 100%;
+   height:50px;
+   background-color: #fff;
+   color: white;
+   text-align: center;
+
+   display:flex;
+
+}
+.footerlast li{
+  padding-top:15px;
+  text-align:center;
+  margin-left:20px; 
+  list-style:none;
+  color:grey;
+}
+.footerlast .iconimg{
+
+  display:flex;
+  padding-top:10px;
+  margin-left:800px;
+}
+.footerlast .img1{
+  height:30px;
+margin-left:30px;
+
+  width:40px;
+
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+
+}
+
+.footerlast .img2{
+  height:40px;
+margin-left:40px;
+margin-top:-5px;
+  width:40px;
+
+ -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.footerlast .img5{
+  height:40px;
+margin-left:40px;
+margin-top:-5px;
+  width:40px;
+
+ -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.footerlast .img5:hover{
+  background-color:#fff;
+
+ -webkit-filter: grayscale(00%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(00%);
+}
+.footerlast .logo{
+  width:100%;
+  height: 100%;
+  
+  transition: transform .2s;
+ 
+
+ 
+}
+.footerlast .img1:hover{
+  webkit-filter: grayscale(00%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+
+}
+.footerlast  .img2:hover{
+webkit-filter: grayscale(00%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  height:300px;
+  width:200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  border-radius:5px;
+}
+
+.dropdown-content li {
+  color: black;
+  margin-top:0px ;
+  
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li:hover {
+ color:#008CBA;
+width:100;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.dropdown .unorderlist {
+text-align:left;
+     width:100px;
+      margin-top: 0px;
+      color:grey;
+    }
+</style>
+<body>
+
+<nav>
+  <ul >
+    <a class="navbar-brand" href="">
+      <div class="logo-image">
+            <img src="images/GitHublogo.png" class="img-fluid">
+      </div>
+</a>
+   <div class="dropdown">  <li><a   href="#" >Why github?  <i class="arrow down"></i></a> </li>  <div class="dropdown-content">
+   <ul class="unorderlist" style="color:grey;">
+<li>Product</li>
+<li>Features</li>
+<li>secuirty</li>
+<li>team</li>
+
+</ul>
+  </div></div>
+     <li><a href="#">Team? </a></li>
+        <li><a href="#">Enterprise </a></li>
+          <div class="dropdown">  <li><a href="#">Explore  <i class="arrow down"></i> </a></li> <div class="dropdown-content">
+   <ul class="unorderlist" style="color:grey;">
+<li>Product</li>
+<li>Features</li>
+<li>secuirty</li>
+<li>team</li>
+
+</ul>
+  </div></div>
+            <li><a href=""> Marketplace </a></li>
+              <li><a href="#">priceing  <i class="arrow down"></i> </a></a></li>
+
+                <li> <input type="text" placeholder="Search GitHub" class="searchbox"onclick="">
+                </li>
+                <li><a href=""> Sign in </a></li>
+
+                 <li><a class="button" onclick="show()" href="#">Sign up </a></li>
+  </ul>
+   <select> 
+    <option value=""> </option> 
+    
+    <option value="/">Home</option> 
+    <option value="/collections/all">Team</option> 
+    <option value="/blogs/five-simple-steps-blog">Enterprise</option> 
+    <option value="/pages/about-us">Marketplace</option> 
+    <option value="/pages/support">priceing</option> 
+  </select> 
+ 
+</nav>
+<diV class="backgroundrt">
+  <!--
+    <div class="drop1">
+    <ul class="unorderlist">
+<li>Product</li><br>
+<li>Features</li><br>
+<li>secuirty</li><br>
+<li>team</li><br>
+<li>Enterprise</li><br>
+<li>Customer stories</li><br>
+</ul>
+</div>
+
+   <div class="drop2">
+    <ul class="unorderlist">
+<li>Support</li><br>
+<li>Help</li><br>
+<li>Satus</li><br>
+<li>Contact Github</li><br>
+<li>Company</li><br>
+<li>About</li><br>
+</ul>
+</div>
+-->
+  <section class="lines">
+    
+      
+     
+      <p>
+        <span class="header"> Built for developers</span><br>
+GitHub is a development platform inspired by the way you work. From <span class="white">open source</span> to<span class="white"> business </span>, you can host and review code, manage projects, and build software alongside 50 million developers.
+    </p>
+    
+    
+  </section>
+  <section class="signupform" id="signform">
+   <div>
+  <form action="/action_page.php">
+    <label for="Name">Name</label>
+    <input type="text" id="name" name="Name" placeholder="Your name..">
+
+    <label for="Email ">Email</label>
+    <input type="text" id="email" name="Email" placeholder="Your last Email..">
+
+    <label for="Password">Password</label>
+    <input type="Password" id="Pass" name="Password" placeholder="Your Password..">
+    <p class="passinfo" style="font-size:13px;">
+      Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.<span class="blue"> <a href="#">Learn more </a></span>
+    </p>
+
+  
+    <input type="submit" value="Sign up for GitHub">
+    <p style="font-size:10px;">
+    By clicking “Sign up for GitHub”, you agree to our <span class="blue">Terms of Service</span> and<span class="blue"> Privacy Statement.</span> We’ll occasionally send you account related emails.
+  </form>
+  </p>
+</div>
+
+  </diV>
+  <section class="imagesft">
+
+<div class="images1" style="margin-top:20px">
+  <p class="para1" >
+ <span class="big">Add the Satellite keynote to your calendar
+  </span>
+<br> 
+Tune in to the Satellite livestream on May 6 at 9 am PT / 12 pm ET / 6 pm CET for product announcements from GitHub CEO Nat Friedman and more.
+ 
+</p>
+ <button class="button2" style="margin-top:-200px;"><h4>Add a calender reminder</h4></button>
+</div>
+  
+  </section>
+  <section class="brandlogos">
+    <div class="verticalslogos">
+      <p>More than 2.9 million businesses and organizations use GitHub</p>
+      
+<div class="row">
+  <div class="column">
+    <img src="images/airbnb-logo.png" alt="Snow" style="width:70%">
+  </div>
+  <div class="column">
+    <img src="images/bloomberg-logo.png" alt="Forest" style="width:70%">
+  </div>
+  <div class="column">
+    <img  class="fblogo"src="images/icons8-facebook.svg" alt="Mountains" style="width:70%">
+
+  </div>
+  <div class="column">
+    <img  class="fblogo"src="images/icons8-google.svg" alt="Snow" style="width:70%">
+  </div>
+  <div class="column">
+    <img src="images/ibm-logo.png" alt="Snow" style="width:70%">
+  </div>
+  <div class="column">
+    <img class="fblogo" src="images/nasa-logo.png" alt="Snow" style="width:70%">
+  </div>
+</div>
+   
+          
+<div class="row1">
+  <div class="column">
+    <img src="images/node-logo.png" alt="Snow" style="width:70%">
+  </div>
+  <div class="column">
+    <img src="images/paypal-logo.png" alt="Forest" style="width:70%">
+  </div>
+  <div class="column">
+    <img src="images/sap-logo.png" alt="Mountains" style="width:70%">
+
+  </div>
+  <div class="column">
+    <img src="images/spotify-logo.png" alt="Snow" style="width:70%">
+  </div>
+  <div class="column">
+    <img class="fblogo" src="images/swift-logo.png" alt="Snow" style="width:70%">
+  </div>
+  <div class="column">
+    <img src="images/walmart-logo.png" alt="Snow" style="width:70%">
+  </div>
+</div>
+    </div>
+     </div>
+  </section>
+  <div class="team">
+   <span class="s1">GitHub for teams</span> <br><br>
+<spam class="s2">A better way to work together</spam><br>
+<p class="p1">
+GitHub brings teams together to work through problems, move ideas forward, and learn from each other along the way.
+
+</p>
+<button class="button3" style="margin-top:20px;"><h4>Sign up your team</h4></button>
+  </div>
+
+<section class="cards">
+ 
+
+  <div class="imagerobo">
+     <div class="img3"> <img  src="images/3785258.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;"></div>
+<img class="imgchange" src="images/home-illo-team.svg" alt="Pineapple" style="width:700px;height:700px;margin-left:15px;">
+
+ 
+
+ 
+</div>
+<div class="subcards">
+<div class="frame">
+
+        <div class="card">
+      <h3>Write better code</h3>
+      <p>Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build. </p>
+     
+    </div>
+    </div>
+    <br>
+    <!-- Alignment of vertically oversized image -->
+    <div class="frame">
+        <div class="card">
+      <h3>Write better code</h3>
+      <p>Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build. </p>
+    </div>
+    </div>
+    <br>
+    <!-- Alignment of horizontally oversized image -->
+    <div class="frame">
+       <div class="card">
+       <h3>Write better code</h3>
+      <p>Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build. </p>
+      
+    </div>
+    </div>
+ </div>
+
+</section>
+
+
+
+<section class="slidecard">,
+
+  <h2>See how the world's leading companies use GitHub Enterprise.</h2>
+<section class="t2">
+<div class="card"> 
+<div class="img1">
+  <img src="images/bgtext.png" alt="Avatar" style="width:100%;border-radius:5px;"></div>
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+
+    <hr >
+    <h3>Read more</h3> 
+  </div>
+</div>
+<br>
+<div class="card">
+<div class="img1">
+  <img src="images/z2.jpg" alt="Avatar" style="width:100%;border-radius:5px;"></div>
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p>
+     <hr > 
+     <h3>Read more</h3> 
+  </div>
+</div>
+<div class="card">
+<div class="img1">
+  <img src="images/z3.jpg" alt="Avatar" style="width:100%;border-radius:5px;"></div>
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+     <hr >
+     <h3>Read more</h3> 
+  </div>
+</div>
+<div class="card">
+<div class="img1">
+  <img src="images/z4.jpg" alt="Avatar" style="width:100%;border-radius:5px;"></div>
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+     <hr >
+     <h3>Read more</h3> 
+  </div>
+</div>
+</section>
+
+
+  </section>
+  <section class="learngithub">
+   <div class="team">
+   <span class="s1">Security and administration</span> <br><br>
+<spam class="s2">Your business needs, met</spam><br>
+<p class="p1">
+rom flexible hosting to granular access controls, we’ve got your security requirements covered.
+
+</p>
+<button class="button3" style="margin-top:20px;"><h4> how GitHub Enterprise works </h4></button>
+  </div>
+
+</section>
+<section class="coding">
+  <div class="textgroup">
+  <div class="frame">
+        <div class="card">
+      <h3>Code security</h3>
+      <p>Prevent problems before they happen. Protected branches, signed commits, and required status checks protect your work and help you maintain a high standard for your code.
+. </p>
+     
+    </div>
+    </div>
+    <br>
+    <!-- Alignment of vertically oversized image -->
+    <div class="frame">
+        <div class="card">
+      <h3>Access controlled</h3>
+      <p>Encourage teams to work together while limiting access to those who need it with granular permissions and authentication through SAML/SSO and LDAP </p>
+    </div>
+    </div>
+    </div>
+    <div class="imgs">
+  <img src="images/home-illo-business.png" alt="Avatar" style="width:100%;">
+ </div>
+  
+  
+</section>
+<section class=longcard>
+<div class="frame">
+        <div class="card">
+
+  <img  class="logo"src="images/cd.png" alt="Avatar">
+<div class="text">
+      <h3>Hosted where you need it</h3>
+      <p>
+Securely and reliably host your work on GitHub using GitHub Enterprise Cloud. Or deploy GitHub Enterprise Server in your own data centers or in a private cloud using Amazon Web Services, Azure, or Google Cloud Platform.</p>
+<h4>Compare plans </h4>
+<h4>Contact Sales for more information </h4>
+     
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="lastsec">
+     <section class="learngithub">
+   <div class="team">
+   <span class="s1">Integrations</span> <br><br>
+<spam class="s2">Build on GitHub</spam><br>
+<p class="p1">
+Customize your process with GitHub apps and an intuitive API. Integrate the tools you already use or discover new favorites to create a happier, more efficient way of working.
+
+
+
+
+</p>
+<button class="button3" style="margin-top:20px;"><h4> Learn about integrations </h4></button>
+  </div>
+
+</section>
+</section>
+<section class="circularimg">
+  <div class="img1">
+<img  class="logo"src="images/icons8-google.svg" alt="Avatar">
+  </div>
+  <div class="img2">
+    <img  class="logo"src="images/icons8-facebook.svg" alt="Avatar">
+  </div>
+   <div class="img1">
+<img  class="logo"src="images/icons8-spotify.svg" alt="Avatar">
+  </div>
+  <div class="img2">
+    <img  class="logo"src="images/icons8-twitter.png"alt="Avatar">
+  </div>
+   <div class="img1">
+<img  class="logo"src="images/insta.png" alt="Avatar">
+  </div>
+  <div class="img2">
+    <img  class="logo"src="images/in.png" alt="Avatar">
+  </div>
+  
+  
+  
+</section>
+<section class="simpltext">
+  
+  <p>
+    Sometimes, there’s more than one tool for the job.<br>Why not try something new?
+  </p>
+  <h4>Browse GitHub Marketplace </h4>
+  </section>
+   <section class="developers">
+  <section class="learngithub">
+   <div class="team">
+   <span class="s1">Community</span> <br><br>
+<spam class="s2">Welcome home,
+developers</spam><br>
+<p class="p1">
+GitHub is home to the world’s largest community of developers and their projects...
+
+</p>
+  </div>
+
+</section>
+<section class="developerscard">
+  
+
+<section class="slidecard">,
+
+
+<section class="t2">
+<div class="card"> 
+<div class="img1">
+  <img src="images/bgtext.png" alt="Avatar" style="width:100%;border-radius:5px;"></div>
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+
+    <hr >
+    <h3>Read more</h3> 
+  </div>
+</div>
+<br>
+<div class="card">
+<div class="img1">
+  <img src="images/z2.jpg" alt="Avatar" style="width:100%;border-radius:5px;"></div>
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p>
+     <hr > 
+     <h3>Read more</h3> 
+  </div>
+</div>
+<div class="card">
+<div class="img1">
+  <img src="images/z3.jpg" alt="Avatar" style="width:100%;border-radius:5px;"></div>
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+     <hr >
+     <h3>Read more</h3> 
+  </div>
+</div>
+<div class="card">
+<div class="img1">
+  <img src="images/z4.jpg" alt="Avatar" style="width:100%;border-radius:5px;"></div>
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+     <hr >
+     <h3>Read more</h3> 
+  </div>
+</div>
+</section>
+
+
+</section>
+  <div class="lasttext">
+    <p>...whether you’re making your first commit or sending a Rover to Mars, <br>there’s room for you here, too.</p>
+    
+</div>
+<section class="lastcards">
+  <section class="cards">
+ 
+
+  <div class="imagerobo">
+     <div class="circle1"><span>100M         repositories worldwide</span> </div>
+      <div class="circle2"><span>50M      Developers worldwide</span>   </div>
+       <div class="circle3"><span>20M        repositories worldwide</span></div>
+
+
+ 
+</div>
+<div class="subcards">
+<div class="frame">
+
+        <div class="card">
+      <h3>Write better code</h3>
+      <p>Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build. </p>
+     
+    </div>
+    </div>
+    <br>
+    <!-- Alignment of vertically oversized image -->
+    <div class="frame">
+        <div class="card">
+      <h3>Write better code</h3>
+      <p>Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build. </p>
+    </div>
+    </div>
+    <br>
+    <!-- Alignment of horizontally oversized image -->
+    <div class="frame">
+       <div class="card">
+       <h3>Write better code</h3>
+      <p>Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build. </p>
+      
+    </div>
+    </div>
+ </div>
+
+</section>
+
+
+</section>
+<section class="footer1">
+  <div class="textfooter">
+    <p>
+     Get started for free — join the millions of developers already using GitHub to share their code, work together, and build amazing things.   </p>
+  </div>
+    <section class="footerform">
+   <div class=flex1>
+  <form action="/action_page.php">
+   
+    <input type="text" id="name" name="Name" placeholder="Your name..">
+
+    
+    <input type="text" id="email" name="Email" placeholder="Your last Email..">
+
+    
+    <input type="Password" id="Pass" name="Password" placeholder="Your Password..">
+    
+
+  
+    <input type="submit" value="Sign up for GitHub">
+    
+  </form>
+  </div>
+  <p style="color:white; margin-left:250px; font-size:15px;">By clicking “Sign up for GitHub”, you agree to our terms of service and privacy statement. We’ll occasionally send you account related emails.</p>
+  
+</section>
+
+
+<section class="footer2">
+  <div class="not">
+   <img src="images/github-logok.png" alt="Avatar">
+
+<ul class="unorderlist">
+<li>Product</li><br>
+<li>Features</li><br>
+<li>secuirty</li><br>
+<li>team</li><br>
+<li>Enterprise</li><br>
+<li>Customer stories</li><br>
+</ul>
+<ul class="unorderlist">
+<li>Platfrom</li><br>
+<li>Developer API</li><br>
+<li>Partners</li><br>
+<li>Atom</li><br>
+<li>Github Desktop</li><br>
+<li>Pricing.</li><br>
+</ul>
+<ul class="unorderlist">
+<li>Support</li><br>
+<li>Help</li><br>
+<li>Satus</li><br>
+<li>Contact Github</li><br>
+<li>Company</li><br>
+<li>About</li><br>
+</ul>
+  </div>
+</section>
+<div class="footerlast">
+ <li>© 2020 GitHub, Inc.</li>
+<li>Terms</li>
+<li>Privacy</li>
+<div class="iconimg">
+  <div class="img1">
+<img  class="logo"src="images/icons8-google.svg" alt="Avatar">
+  </div>
+  <div class="img1">
+    <img  class="logo"src="images/fb9.png" alt="Avatar">
+  </div>
+   
+  <div class="img2">
+    <img  class="logo"src="images/tw2.png"alt="Avatar">
+  </div>
+   <div class="img1">
+<img  class="logo"src="images/insta2.png" alt="Avatar">
+  </div>
+  <div class="img2">
+    <img  class="logo"src="images/in8.png" alt="Avatar">
+  </div>
+</div>
+</div>
+
+</body>
+<script>
+ function show(){
+   document.getElementById('signform').style.display="block";
+ }
+</script>
+</html>
